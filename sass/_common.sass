@@ -110,27 +110,28 @@ input, textarea
 .btn
   display: block
   width: 100%
-  font-size: 14px
+  font-size: 22px
+  height: 48px
   text-decoration: none
   text-transform: uppercase
-  +transition(background, .5s)
-  color: #ffffff
+  //+transition(background, .5s)
+  color: #6a1b00
   font-family: 'robotocondensed'
-  border: 2px solid #730933
-  +border-radius(19px)
-  +background-clip(padding-box)
-  background: #730933
+  +border-radius(10px)
+  +box-shadow(0 5px 5px rgba(29,30,31,.21), inset 0 -4px 0 rgba(29,30,31,.15))
+  +background(linear-gradient(to bottom, #ffdb18 0%, #ff9f19 100%))
+  border: none
   span
     display: inline-block
     position: relative
-    top: 0
-    left: 45px
+    top: -3px
+    left: 21px
     +s(button-ico)
 
   &:hover, &:focus
-    background: lighten(#730933, 10%)
+    background: lighten(#ffdb18, 10%)
     +box-shadow(0 0 0 0)
-    color: #fff
+    color: #6a1b00
 .title
   font-size: 48px
   font-family: 'rumpelstiltskinregular'
@@ -160,12 +161,22 @@ input, textarea
   padding: 0
   .counter-title
     color: inherit
-    font-size: 27px
+    font-size: 16px
     display: inline-block
-    font-family: 'rumpelstiltskinregular'
-    margin: 0
+    font-family: 'robotocondensed'
+    margin: 0 0 10px
     position: relative
     text-transform: uppercase
+    span
+      position: relative
+      display: inline-block
+      margin-right: 5px
+      +s(counter-ico)
+      top: 0
+      left: -10px
+      vertical-align: middle
+
+
   .bl
     float: left
     text-align: center

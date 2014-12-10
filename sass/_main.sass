@@ -97,96 +97,103 @@ header
   +cover
   position: relative
   +box
-  padding: 40px 0
+  padding: 40px 0 0
   .row
     &:nth-of-type(2)
-      margin-top: 40px
+      margin-top: 25px
   .header__text
     position: relative
     color: #ffffff
     p
-      font-size: 19px
-      font-family: 'robotoitalic'
+      font-size: 16px
+      font-family: 'robotomedium'
       margin-bottom: 0
-      margin-top: 25px
+      margin-top: 10px
+    h3
+      text-transform: uppercase
+      font-size: 29px
+      font-family: 'robotobold_condensed'
+      margin-top: 35px
       span
-        font-family: 'robotomedium'
-        font-size: 18px
-      i
-        position: relative
-        display: inline-block
-        +s(baloons)
-        top: 0
-        left: 0
-        margin-right: 20px
-        float: left
+        color: #ffc818
   .header__title
     margin: 0
     font-family: 'rumpelstiltskinregular'
-    font-size: 30px
-    color: #ffffff
+    font-size: 60px
+    color: #ffd918
     text-transform: uppercase
     line-height: 1.4em
-    span
-      font-size: 60px
   .header__img
     display: inline-block
     position: relative
     width: 100%
+    height: auto
     text-align: center
-    img
-      max-width: 100%
+    margin-left: -50px
   .header__price
+    background: url(../img/header-price_bg.png) no-repeat
+    width: 166px
+    height: 166px
     color: #ffffff
     text-align: center
-    h4
-      font-family: 'rumpelstiltskinregular'
-      font-size: 27px
-      margin: 0
-      text-transform: uppercase
-      +text-shadow(0 2px 0 rgba(112,18,0,.4))
+    padding-top: 55px
+    position: relative
+    top: -80px
     .price--new
       font-family: 'robotobold_condensed'
-      font-size: 48px
-      line-height: 1em
-      +text-shadow(0 2px 0 rgba(112,18,0,.4))
-    .price--old
-      font-family: 'robotobold_condensed'
-      color: #720a34
       font-size: 30px
-      margin-top: 5px
+      line-height: 1em
+      span
+        font-size: 24px
+    .price--old
+      font-family: 'robotocondensed'
+      color: #912602
+      font-size: 24px
 
   .header__counter
     position: relative
     text-align: center
     color: #ffffff
-    .now
-      font-family: 'robotoregular'
-      font-size: 14px
-      margin-top: 15px
-      span
-        position: relative
-        top: 0
-        left: 14px
-        +s(arrow-ico)
-        display: inline-block
+    margin-top: 5px
 
   .header__form
     input
-      height: 34px
-      width: 100%
+      height: 38px
+      display: inline-block
+      width: 48%
       //max-width: 292px
       margin-bottom: 10px
+      margin-right: 2%
       font-size: 16px
       padding-left: 15px
       border: 2px solid #fff
-      @include border-radius(19px)
-      @include background-clip(padding-box)
-      background: #fff
-
+      +border-radius(10px)
+      +background-clip(padding-box)
+      background-color: #fff
+      +box-shadow(inset 0 4px 6px rgba(29,30,31,.26))
+      &:last-of-type
+        margin-right: 0
     button
-      margin-top: 20px
-
+      margin-top: 0
+  .header__bottom
+    position: relative
+    clear: both
+    font-family: 'robotoitalic'
+    font-size: 16px
+    color: #ffffff
+    padding: 10px 55px
+    &:before
+      position: absolute
+      content: ''
+      +s(quote-left-ico)
+      left: 0
+      top: 12px
+    &:after
+      position: absolute
+      content: ''
+      +s(quote-right-ico)
+      right: 70px
+      bottom: 12px
 
 
 
