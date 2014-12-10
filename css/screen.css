@@ -1764,17 +1764,10 @@ header .header__bottom:after, .header--bottom .header__bottom:after { position: 
 .intro__item.i9 { position: relative; background: url(../img/i9.png) no-repeat; width: 187px; height: 135px; z-index: 2; right: 20px; }
 .intro__item.i10 { position: relative; background: url(../img/i10.png) no-repeat; width: 175px; height: 135px; z-index: 1; right: 50px; top: -20px; }
 
-.advantages { padding: 40px 0; background: url(../img/advantages_bg.jpg) no-repeat 53% 140px; }
-.advantages h2 { color: #e24878; }
-.advantages h2:after { border-color: #e24878; }
-.advantages__item { color: #ffffff; font-size: 15px; text-align: center; font-family: "robotoregular"; margin-top: 46px; display: table; }
-.advantages__item.i1 { background: url(../img/a-img1.png) no-repeat; width: 261px; height: 80px; }
-.advantages__item.i2 { background: url(../img/a-img2.png) no-repeat; width: 256px; height: 80px; margin-left: -20px; }
-.advantages__item.i3 { background: url(../img/a-img3.png) no-repeat; width: 261px; height: 80px; }
-.advantages__item.i4 { background: url(../img/a-img4.png) no-repeat; width: 261px; height: 80px; }
-.advantages__item.i5 { background: url(../img/a-img5.png) no-repeat; width: 256px; height: 80px; margin-right: -20px; }
-.advantages__item.i6 { background: url(../img/a-img6.png) no-repeat; width: 261px; height: 80px; }
-.advantages__item p { display: table-cell; vertical-align: middle; line-height: 1em; }
+.video { padding: 40px 0 0; background: url(../img/video_bg.png); overflow: hidden; }
+.video h2 { font-family: "rumpelstiltskinregular"; color: #ffffff; font-size: 36px; text-align: center; text-transform: uppercase; }
+.video__block { background: url(../img/video-pad.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-top: 90px; margin: 30px -50px 0; }
+.video__video { position: relative; top: -35px; }
 
 .use { background: url(../img/use_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-top: 120px; overflow: hidden; }
 .use h2 { color: #ffffff; margin-bottom: 20px; }
