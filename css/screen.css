@@ -1809,7 +1809,7 @@ header .header__bottom:after, .header--bottom .header__bottom:after { position: 
 .review__img { display: inline-block; width: 57px; height: 57px; margin-right: 15px; vertical-align: middle; }
 .review__img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .review__head { text-align: center; display: inline-block; vertical-align: middle; }
-.review__name { font-family: "robotobold_condensed"; color: #e24878; height: 50px; font-size: 24px; position: relative; }
+.review__name { font-family: "robotobold_condensed"; color: #a30000; height: 50px; font-size: 24px; position: relative; }
 .review__text { font-family: "robotoregular"; font-size: 16px; color: #7b7b7b; margin-top: 10px; padding-right: 20px; z-index: 1; }
 .review .carousel-control { background-image: none; width: 50px; height: auto; }
 .review .carousel-control.left { background: url('../img/icons-s8bb09a98ba.png') 0 -215px no-repeat; width: 25px; height: 40px; top: 25%; }
