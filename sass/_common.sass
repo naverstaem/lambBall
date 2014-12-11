@@ -1,0 +1,222 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+
+//body
+//  font-family: Arial, sans-serif
+//  font-size: 12px
+//  line-height: 1.4
+//=pfl
+  font-family: "Conv_PFDinTextCondPro-Light"
+  font-weight: normal
+  font-style: normal
+
+
+
+
+.btn:focus, input:focus, a:focus
+  outline: none !important
+
+.container, .container-fluid
+  max-width: 965px
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+
+.icon
+  display: inline-block
+  position: relative
+
+body
+  font-size: 18px
+  line-height: 1.4
+  background: #ffffff
+  color: #3c3c3c
+  font-family: 'robotoregular'
+  //+pfl
+.out
+  position: relative
+  //overflow: hidden
+input, textarea
+  +placeholder
+    font-size: 14px
+    text-transform: none
+    color: #888888
+    font-family: 'robotolight_italic'
+%in
+  max-width: 1200px
+  width: 1000px
+  margin-left: auto
+  margin-right: auto
+
+.fancybox-inner
+  +box-shadow(0 38px 40px -40px black)
+.myFancyClose
+  position: absolute
+  top: -25px
+  left: 50%
+  +transform(translateX(-50%))
+  //+s(close)
+
+.btn
+  display: block
+  width: 100%
+  font-size: 22px
+  height: 48px
+  text-decoration: none
+  text-transform: uppercase
+  //+transition(background, .5s)
+  color: #6a1b00
+  font-family: 'robotocondensed'
+  +border-radius(10px)
+  +box-shadow(0 5px 5px rgba(29,30,31,.21), inset 0 -4px 0 rgba(29,30,31,.15))
+  +background(linear-gradient(to bottom, #ffdb18 0%, #ff9f19 100%))
+  border: none
+  span
+    display: inline-block
+    position: relative
+    top: -3px
+    left: 21px
+    +s(button-ico)
+
+  &:hover, &:focus
+    background: lighten(#ffdb18, 10%)
+    +box-shadow(0 0 0 0)
+    color: #6a1b00
+.title
+  font-size: 36px
+  font-family: 'rumpelstiltskinregular'
+  line-height: 1em
+  color: #900000
+  text-transform: uppercase
+  font-weight: normal
+  position: relative
+  text-align: center
+  &:after
+    position: absolute
+    content: ""
+    background: url(../img/title-ico.png) no-repeat
+    width: 334px
+    height: 19px
+    left: 50%
+    bottom: -22px
+    +transform(translateX(-50%))
+
+.title--light
+  color: #ffffff
+  &:after
+    background: url(../img/title-ico2.png) no-repeat
+
+
+.counter
+  display: inline-block
+  vertical-align: middle
+  margin-top: 0
+  padding: 0
+  .counter-title
+    color: inherit
+    font-size: 16px
+    display: inline-block
+    font-family: 'robotocondensed'
+    margin: 0 0 10px
+    position: relative
+    text-transform: uppercase
+    span
+      position: relative
+      display: inline-block
+      margin-right: 5px
+      +s(counter-ico)
+      top: 0
+      left: -10px
+      vertical-align: middle
+
+
+  .bl
+    float: left
+    text-align: center
+    margin: 0 4px
+    &:last-of-type
+      margin-right: 0
+    &:first-of-type
+      margin-left: 0
+    span
+      display: inline-block
+      font-family: 'robotobold_condensed'
+      font-size: 20px
+      color: #881342
+      padding-top: 5px
+      width: 39px
+      height: 39px
+      position: relative
+      +border-radius(50%)
+      +background-clip(padding-box)
+      +box-shadow(0 2px 0 rgba(112,18,0,.4))
+      +background(linear-gradient(to bottom, #fff 0%, #e6e8ea 100%))
+      //&:after
+      //  position: absolute
+      //  content: ":"
+      //  font-size: 33px
+      //  top: 3px
+      //  right: -16px
+      //&.s
+      //  &:after
+      //    content: ""
+
+
+    p
+      font-family: 'robotoregular'
+      font-size: 12px
+      color: inherit
+      margin-top: 2px
+
+
+

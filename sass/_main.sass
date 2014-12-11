@@ -1,0 +1,751 @@
+// Normally mainpage styles 
+//+font('Conv_SegoePrintRegular', 'SegoePrintRegular')
+
+.top
+  background: #ffffff
+
+.navbar
+  margin-bottom: 0
+
+.navbar-brand
+  text-transform: uppercase
+  color: #753268 !important
+  font-family: 'robotomedium'
+.navbar-default
+  border: none
+  background: none
+  padding: 10px 0
+  text-align: center
+  .icon-bar
+    background-color: #3f3f3f !important
+
+  .navbar-nav
+    margin-top: 0
+    margin-left: -30px
+    li
+      margin-right: 0
+      &:last-of-type
+        margin-right: 0
+      a
+        color: #888888 // text color
+        font-family: 'robotocondensed'
+        font-size: 14px
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        border-bottom: solid 1px rgba(0, 0, 0, 0)
+        margin: 10px 15px
+        padding: 0
+        +transition(background,.1s)
+        &:hover, &.active, &:focus
+          +background-clip(padding-box)
+          background: transparent
+          color: #888
+          border-bottom: solid 1px #888
+
+
+
+  .navbar-right
+    margin-top: 2px
+    .right-b
+      display: inline-block
+      text-align: right
+      vertical-align: middle
+      margin-right: 0
+      .nomenclature
+        display: inline-block
+        vertical-align: middle
+        font-family: 'robotocondensed_italic'
+        font-size: 16px
+        color: #acacac
+        margin-right: 55px
+        line-height: 1em
+      h2
+        color: #224ade // text color
+        display: inline-block
+        font-size: 20px
+        vertical-align: middle
+        font-family: 'robotomedium'
+        margin: 0 10px 0 0
+        span
+          position: relative
+          display: inline-block
+          +s(phone-ico)
+          top: 3px
+          left: -10px
+
+      a
+        color: #ffffff // text color
+        font-size: 16px
+        vertical-align: middle
+        display: inline-block
+        font-family: 'robotocondensed_italic'
+        line-height: 1em
+        text-decoration: none
+        text-transform: none
+        border: none
+        +border-radius(10px)
+        padding: 9px 22px
+        +background-clip(padding-box)
+        background: #a30000
+        &:hover
+          background: lighten(#a30000, 10%)
+
+
+header
+  background: url(../img/header_bg.jpg)
+  +cover
+  position: relative
+  +box
+  padding: 40px 0 0
+  .row
+    &:nth-of-type(2)
+      margin-top: 25px
+  .header__text
+    position: relative
+    color: #ffffff
+    p
+      font-size: 16px
+      font-family: 'robotomedium'
+      margin-bottom: 0
+      margin-top: 10px
+    h3
+      text-transform: uppercase
+      font-size: 29px
+      font-family: 'robotobold_condensed'
+      margin-top: 35px
+      span
+        color: #ffc818
+  .header__title
+    margin: 0
+    font-family: 'rumpelstiltskinregular'
+    font-size: 60px
+    color: #ffd918
+    text-transform: uppercase
+    line-height: 1.4em
+  .header__img
+    display: inline-block
+    position: relative
+    width: 100%
+    height: auto
+    text-align: center
+    margin-left: -50px
+  .header__price
+    background: url(../img/header-price_bg.png) no-repeat
+    width: 166px
+    height: 166px
+    color: #ffffff
+    text-align: center
+    padding-top: 55px
+    position: relative
+    top: -80px
+    .price--new
+      font-family: 'robotobold_condensed'
+      font-size: 30px
+      line-height: 1em
+      span
+        font-size: 24px
+    .price--old
+      font-family: 'robotocondensed'
+      color: #912602
+      font-size: 24px
+
+  .header__counter
+    position: relative
+    text-align: center
+    color: #ffffff
+    margin-top: 5px
+
+  .header__form
+    input
+      height: 38px
+      display: inline-block
+      width: 48%
+      //max-width: 292px
+      margin-bottom: 10px
+      margin-right: 2%
+      font-size: 16px
+      padding-left: 15px
+      border: 2px solid #fff
+      +border-radius(10px)
+      +background-clip(padding-box)
+      background-color: #fff
+      +box-shadow(inset 0 4px 6px rgba(29,30,31,.26))
+      &:last-of-type
+        margin-right: 0
+    button
+      margin-top: 0
+  .header__bottom
+    position: relative
+    clear: both
+    font-family: 'robotoitalic'
+    font-size: 16px
+    color: #ffffff
+    padding: 10px 55px
+    &:before
+      position: absolute
+      content: ''
+      +s(quote-left-ico)
+      left: 0
+      top: 12px
+    &:after
+      position: absolute
+      content: ''
+      +s(quote-right-ico)
+      right: 70px
+      bottom: 12px
+
+
+
+.intro
+  padding: 30px 0 50px
+  background: url(../img/intro_bg.png)
+  +cover
+  position: relative
+  font-family: 'robotoregular'
+  font-size: 16px
+  color: #5e5e5e
+  &:before
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    height: 270px
+    z-index: 0
+    +background(linear-gradient(to bottom, #fff ,rgba(#fff, 0)))
+    content: ''
+  p
+    margin-top: 55px
+    &:last-of-type
+      text-align: center
+  &__block
+    background: url(../img/intro-img.png) no-repeat 49% 180px
+  &__item
+    position: relative
+    text-align: center
+    display: table
+    padding: 0 20px
+    span
+      display: table-cell
+      vertical-align: middle
+    &.i1
+      position: relative
+      background: url(../img/i1.png) no-repeat
+      width: 183px
+      height: 135px
+      z-index: 5
+    &.i2
+      position: relative
+      background: url(../img/i2.png) no-repeat
+      width: 188px
+      height: 135px
+      z-index: 4
+      padding-right: 33px
+      top: 15px
+      left: -45px
+    &.i3
+      position: relative
+      background: url(../img/i3.png) no-repeat
+      width: 188px
+      height: 135px
+      z-index: 3
+      top: 50px
+      left: -77px
+    &.i4
+      position: relative
+      background: url(../img/i4.png) no-repeat
+      width: 178px
+      height: 135px
+      z-index: 2
+      top: 77px
+      left: -50px
+    &.i5
+      position: relative
+      background: url(../img/i5.png) no-repeat
+      width: 167px
+      height: 139px
+      z-index: 1
+      left: -80px
+      top: 10px
+    &.i6
+      position: relative
+      background: url(../img/i6.png) no-repeat
+      width: 167px
+      height: 151px
+      z-index: 5
+      left: -40px
+    &.i7
+      position: relative
+      background: url(../img/i7.png) no-repeat
+      width: 167px
+      height: 144px
+      z-index: 4
+      left: -57px
+      top: 60px
+    &.i8
+      position: relative
+      background: url(../img/i8.png) no-repeat
+      width: 178px
+      height: 135px
+      z-index: 3
+      top: 20px
+      right: -10px
+    &.i9
+      position: relative
+      background: url(../img/i9.png) no-repeat
+      width: 187px
+      height: 135px
+      z-index: 2
+      right: 20px
+    &.i10
+      position: relative
+      background: url(../img/i10.png) no-repeat
+      width: 175px
+      height: 135px
+      z-index: 1
+      right: 50px
+      top: -20px
+.video
+  padding: 40px 0 0
+  background: url(../img/video_bg.png)
+  overflow: hidden
+  h2
+    font-family: 'rumpelstiltskinregular'
+    color: #ffffff
+    font-size: 36px
+    text-align: center
+    text-transform: uppercase
+  &__block
+    background: url(../img/video-pad.png)
+    +cover
+    padding-top: 90px
+    margin: 30px -50px 0
+  &__video
+    position: relative
+    top: -35px
+
+
+
+
+
+
+
+.about
+  background: url(../img/stars_bg.png) repeat center center
+  padding-top: 30px
+  padding-bottom: 50px
+  color: #5e5e5e
+  div[class^="col-md-"]
+    margin-top: 90px
+  h3
+    font-family: 'robotomedium'
+    font-size: 18px
+
+  p
+    font-family: 'robotoregular'
+    font-size: 16px
+    margin: 0
+    span
+      font-family: 'robotomedium'
+    &.marg
+      margin-top: 20px
+  &__img
+    max-width: 100%
+    +border-radius(50%)
+    position: relative
+    text-align: right
+  &__gift
+    position: relative
+    background: url(../img/about-gift.png) no-repeat
+    display: inline-block
+    width: 196px
+    height: 177px
+    bottom: 180px
+    left: -20px
+    margin-bottom: -130px
+
+.components
+  border-top: rgb(239,239,239) solid 3px
+  padding: 30px 0 60px
+  font-family: 'robotoregular'
+  font-size: 16px
+  color: #7b7b7b
+  h2
+    text-align: left
+    font-size: 36px
+    color: #e24878
+    margin-top: 50px
+    &:after
+      border-bottom: none
+  &__list
+    padding-left: 0
+    margin-top: 40px
+    list-style: none
+    li
+      position: relative
+      padding-left: 40px
+      margin-top: 20px
+      &:before
+        position: absolute
+        content: ''
+        +s(list-ico)
+        top: -1px
+        left: 0
+  &__img
+    position: relative
+    .width
+      position: absolute
+      display: inline-block
+      background: #ffffff
+      padding: 2px
+      content: ""
+      left: 5px
+      top: 180px
+    .height
+      @extend .width
+      bottom: -10px
+      left: 82px
+      top: auto
+    .depth
+      @extend .width
+      right: 130px
+      bottom: 12px
+      left: auto
+      top: auto
+
+
+
+
+
+
+.work
+  padding: 30px 0 60px
+  background: url(../img/work_bg.png)
+  +cover
+  div[class^="col-md-"]
+    &:last-child
+      .work__img
+        &:after
+          background: none
+  h2
+    color: #ffffff
+    &:after
+      border-color: #ffffff
+  &__items
+    margin-top: 30px
+  &__item
+    text-align: center
+    margin-top: 35px
+  &__img
+    width: 64px
+    height: 64px
+    margin-bottom: 5px
+    line-height: 64px
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      top: 55%
+      right: -90px
+      +s(w-next-ico)
+
+
+  h3
+    font-family: 'robotobold_condensed_italic'
+    font-size: 30px
+    margin-top: 0
+    color: #ffffff
+  p
+    font-family: 'robotocondensed'
+    font-size: 16px
+    color: #ffffff
+    text-transform: uppercase
+    padding: 0 20px
+    line-height: 1em
+
+
+
+.review
+  padding: 40px 0 50px
+  background: url(../img/review_bg.png)
+  +cover
+  h2
+    margin-bottom: 50px
+  &__item
+    margin-top: 35px
+    position: relative
+
+  &__img
+    display: inline-block
+    width: 57px
+    height: 57px
+    margin-right: 15px
+    vertical-align: middle
+    img
+      +border-radius(50%)
+  &__head
+    text-align: center
+    display: inline-block
+    vertical-align: middle
+
+  &__name
+    font-family: 'robotobold_condensed'
+    color: #a30000
+    height: 50px
+    font-size: 24px
+    position: relative
+
+
+  &__text
+    font-family: 'robotoregular'
+    font-size: 16px
+    color: #7b7b7b
+    margin-top: 10px
+    padding-right: 20px
+    z-index: 1
+
+  .carousel-control
+    background-image: none
+    width: 50px
+    height: auto
+    &.left
+      +s(prev)
+      top: 25%
+    &.right
+      +s(next)
+      top: 25%
+
+
+
+.header--bottom
+  padding: 15px 0 30px
+  @extend header
+  background: url(../img/header--bottom_bg.jpg)
+  +cover
+  position: relative
+  .header__price--bottom
+    top: 0
+    background: url(../img/header__price--bottom.png) no-repeat
+    width: 132px
+    height: 132px
+    padding-top: 45px
+    margin: 40px 0 10px
+    .price--new
+      font-size: 26px
+      span
+        font-size: 20px
+    .price--old
+      font-size: 20px
+      color: rgb(43,95,0)
+    span
+      display: inline-block
+      position: relative
+      +s(header-arrow)
+      left: 120px
+      top: -65px
+  .header__text--bottom
+    h3
+      margin: 70px 0 40px
+
+.also
+  padding-top: 40px
+  padding-bottom: 85px
+  background: url(../img/stars_bg.png) repeat center center
+  h2
+    &:after
+      background: none
+  .item
+    border: 2px solid rgba(29,30,31,.13)
+    +border-radius(32px)
+    background-color: #fff
+    padding: 20px
+    text-align: center
+    font-family: 'robotoregular'
+    margin-top: 40px
+
+    h3
+      font-size: 24px
+      color: #626262
+      margin-top: 10px
+    img
+      display: inline-block
+      width: 154px
+      height: 154px
+      margin: 20px 0
+      img
+        +border-radius(50%)
+    .price
+      padding: 0 10px
+    .price-b--old
+      font-size: 18px
+      color: #626262
+      display: inline-block
+      width: 45%
+      span
+    .price-b
+      font-size: 30px
+      color: #970000
+      line-height: 1em
+      margin-bottom: 20px
+      display: inline-block
+      width: 45%
+      font-family: 'robotobold_condensed'
+    form
+      padding: 0 30px
+      input
+        height: 35px
+        width: 100%
+        border: 2px solid #e7e7e7
+        +border-radius(12px)
+        margin-bottom: 15px
+        font-size: 16px
+        padding-left: 20px
+      button
+        height: 35px
+        font-size: 14px
+        +box-shadow(inset 0 -4px 0 rgba(29,30,31,.15))
+        span
+          top: 0
+          left: 40px
+        &:active
+          +box-shadow(0 0 0 0)
+
+
+
+
+footer
+  background: url(../img/footer_bg.png) repeat center center
+  padding: 25px 0
+  font-size: 14px
+  position: relative
+  color: #00297c
+  font-family: 'robotoregular'
+  text-align: center
+  .footer__top
+    a
+      display: inline-block
+      color: #00297c
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+  .footer__bottom
+    font-family: 'robotobold_condensed'
+    margin-top: 14px
+    color: #fff
+    text-transform: uppercase
+    span
+      margin-left: 10px
+
+
+//modal forms
+.feedback
+  text-align: center
+  .modal-backdrop
+    background: #000
+    &.in
+      +opacity(.7)
+  .modal-dialog
+    max-width: 390px
+    +border-radius(10px)
+  .modal-content
+    position: relative
+    border: none
+    +border-radius(10px)
+    +background-clip(padding-box)
+    background: #fff
+    +box-shadow(0 0 25px rgba(28,29,30,.3))
+    padding: 40px 50px
+
+    .close
+      position: absolute
+      color: #ffffff
+      +single-text-shadow()
+      top: -15px
+      right: -20px
+      +opacity(.5)
+      > span
+        font-family: 'sans-serif'
+        font-size: 20px
+      &:hover
+        +opacity(.8)
+
+  .modal-header
+    border: none
+    padding: 0
+    h4
+      color: #343837 // text color
+      font-size: 20px
+      font-family: 'robotoregular'
+
+  .modal-body
+    padding: 30px 52px 0
+  form
+    input
+      height: 34px
+      width: 100%
+      border: 2px solid #e7e7e7
+      +border-radius(19px)
+      margin-bottom: 10px
+      font-size: 14px
+      font-family: 'robotocondensed'
+      padding-left: 20px
+    button
+      width: 100%
+      height: 34px
+      border: 1px solid rgb(237,27,36)
+      background: none
+      color: rgb(237,27,36)
+      &:hover
+        +box-shadow(inset 0 0 8px 0 rgb(237,27,36))
+        background: none
+        color: rgb(237,27,36)
+      span
+        position: relative
+        display: inline-block
+        top: 0
+        left: 45px
+        +s(button-ico2)
+.thanks
+  @extend .feedback
+  text-align: center
+
+  .modal-dialog
+    max-width: 650px
+    margin-top: 60px
+  .modal-content
+
+
+  .modal-header
+
+  .modal-body
+    padding: 25px 0
+    h3
+      font-size: 20px
+      color: #343837
+      font-family: 'robotoregular'
+
+
+
+
+
+
+//media queries
+@media (max-width: $screen-lg-min)
+  .intro__img
+    margin-left: 0
+    max-width: 100%
+@media (max-width: $screen-md-min)
+  .advantages__item
+    float: none !important
+    margin: 30px auto 0 !important
+  .about__video
+    margin-top: -200px
+
+//
+@media (max-width: $screen-sm-min)
+
+@media (max-width: $screen-xs-min)
+  .title
+    font-size: 36px !important
+
