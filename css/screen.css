@@ -1838,8 +1838,8 @@ header .header__bottom:after, .header--bottom .header__bottom:after { position: 
 .also .item form button span { top: 0; left: 40px; }
 .also .item form button:active { -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
 
-footer { background: url(../img/footer_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 25px 0; font-size: 14px; position: relative; color: #f3aee4; font-family: "robotoregular"; text-align: center; }
-footer .footer__top a { display: inline-block; color: #f3aee4; text-decoration: underline; }
+footer { background: url(../img/footer_bg.png) repeat center center; padding: 25px 0; font-size: 14px; position: relative; color: #00297c; font-family: "robotoregular"; text-align: center; }
+footer .footer__top a { display: inline-block; color: #00297c; text-decoration: underline; }
 footer .footer__top a:hover { text-decoration: none; }
 footer .footer__bottom { font-family: "robotobold_condensed"; margin-top: 14px; color: #fff; text-transform: uppercase; }
 footer .footer__bottom span { margin-left: 10px; }
