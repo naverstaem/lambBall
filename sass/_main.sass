@@ -519,24 +519,35 @@ header
 
 
 
-
 .header--bottom
-  padding: 0
+  padding: 15px 0 30px
   @extend header
   background: url(../img/header--bottom_bg.jpg)
   +cover
   position: relative
-  .header__title--bottom
-    font-size: 40px
-    line-height: .9
-    margin: 40px 0
-
-  .header__img--bottom
-    top: -30px
-    left: -200px
-    margin-bottom: -30px
-    img
-      max-width: none
+  .header__price--bottom
+    top: 0
+    background: url(../img/header__price--bottom.png) no-repeat
+    width: 132px
+    height: 132px
+    padding-top: 45px
+    margin: 40px 0 10px
+    .price--new
+      font-size: 26px
+      span
+        font-size: 20px
+    .price--old
+      font-size: 20px
+      color: rgb(43,95,0)
+    span
+      display: inline-block
+      position: relative
+      +s(header-arrow)
+      left: 120px
+      top: -65px
+  .header__text--bottom
+    h3
+      margin: 70px 0 40px
 
 .also
   padding-top: 40px
