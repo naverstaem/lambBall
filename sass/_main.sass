@@ -327,93 +327,44 @@ header
 
 
 
-.use
-  background: url(../img/use_bg.png)
-  +cover
-  padding-top: 120px
-  overflow: hidden
-  h2
-    color: #ffffff
-    margin-bottom: 20px
-    &:after
-      border-color: #ffffff
-  &__img
-    width: 160px
-    height: 160px
-    display: inline-block
-    margin-right: 20px
-    margin-top: 20px
-    &:nth-child(even)
-      margin-right: 0
-    img
-      +border-radius(50%)
-  &__list
-    padding-left: 0
-    list-style: none
-    counter-reset: myCounter
-    font-family: 'robotoregular'
-    font-size: 16px
-    color: #ffffff
-    li
-      position: relative
-      padding-left: 53px
-      margin-top: 15px
-      &:before
-        position: absolute
-        content: counter(myCounter)"."
-        counter-increment: myCounter
-        width: 27px
-        height: 27px
-        +border-radius(50%)
-        border: solid 2px #ffffff
-        font-family: 'robotobold_condensed'
-        font-size: 14px
-        color: #ffffff
-        text-align: center
-        top: 0
-        left: 0
-        padding-top: 1px
-  &__girl
-    margin-top: 120px
-    margin-left: 450px
+
 
 
 
 .about
   background: url(../img/about_bg.png)
   +cover
-  padding-top: 210px
-  padding-bottom: 80px
-
-  &__video
-    clear: both
-    margin: 0 auto
-    width: 821px
-    padding-top: 25px
-    height: 586px
-    margin-top: -600px
-    max-width: 100%
-    position: relative
-    text-align: center
-    background: url(../img/about-ipad-img.png)
-    +cover
-    img
-      vertical-align: middle
-      max-width: 100%
+  padding-top: 30px
+  padding-bottom: 50px
+  color: #5e5e5e
+  div[class^="col-md-"]
+    margin-top: 90px
   h3
-    font-family: 'robotoregular'
-    color: #e24878
-    font-size: 24px
-    text-align: center
-    margin-top: 0
-    margin-bottom: 40px
+    font-family: 'robotomedium'
+    font-size: 18px
+
   p
     font-family: 'robotoregular'
     font-size: 16px
-    color: #7b7b7b
+    margin: 0
+    span
+      font-family: 'robotomedium'
+    &.marg
+      margin-top: 20px
   &__img
     max-width: 100%
     +border-radius(50%)
+    position: relative
+    text-align: right
+  &__gift
+    position: relative
+    background: url(../img/about-gift.png) no-repeat
+    display: inline-block
+    width: 196px
+    height: 177px
+    bottom: 180px
+    left: -20px
+    margin-bottom: -130px
 
 .components
   border-top: rgb(239,239,239) solid 3px
